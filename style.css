@@ -137,11 +137,10 @@ header nav a + a {
 
 /* Projects */
 .projects {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 50px;
     padding: 60px 40px;
-    flex-wrap: wrap;
 }
 
 .projects h2 {
@@ -151,6 +150,7 @@ header nav a + a {
     text-transform: uppercase;
     letter-spacing: 5px;
     width: 100%;
+    grid-column: 1 / -1;
     text-align: center;
     margin: 0;
 }
@@ -159,7 +159,6 @@ header nav a + a {
     background-color: #DCE8F299;
     padding: 25px;
     border-radius: 30px;
-    flex: 1;
     margin-top: 2px;
     text-align: center;
     display: flex;
@@ -645,7 +644,7 @@ footer p {
 
     /* HOME PAGE - PROJECTS */
     .projects {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 25px;
         padding: 40px 20px;
     }
