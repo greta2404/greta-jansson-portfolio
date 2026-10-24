@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlight</title>
+
+    <style>
+        body {
+            background-color: #E8ECED;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            width: 700px;
+            height: 540px;
+            margin: 0 auto;
+            background-image: url("images/christus.webp");
+            background-size: cover;
+            background-position: center;
+            border: 6px solid black;
+            border-radius: 35px;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: normal;
+            margin: 10px 0 15px;
+        }
+
+        h2 {
+            font-size: 21px;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+
+        .first-presidency {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .apostles {
+            display: grid;
+            grid-template-columns: repeat(4, 84px);
+            justify-content: center;
+            column-gap: 16px;
+            row-gap: 20px;
+        }
+
+        .leader {
+            width: 70px;
+            height: 70px;
+            border: 6px solid white;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .first-presidency .leader {
+            width: 95px;
+            height: 95px;
+        }
+
+        /* blue glow and zoom effect */
+        .leader:hover {
+            border-color: #71D9FF;
+            box-shadow: 0 0 15px 5px rgba(113, 217, 255, 0.65);
+            transform: scale(1.08);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>First Presidency</h1>
+
+        <div class="first-presidency">
+            <img class="leader" src="images/eyring.webp" alt="Henry B. Eyring">
+            <img class="leader" src="images/oaks.webp" alt="Dallin H. Oaks">
+            <img class="leader" src="images/christofferson.webp" alt="D. Todd Christofferson">
+        </div>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+
+        <div class="apostles">
+
+            <!-- Row 1 -->
+            <img class="leader" src="images/uchtdorf.webp" alt="Dieter F. Uchtdorf">
+            <img class="leader" src="images/bednar.webp" alt="David A. Bednar">
+            <img class="leader" src="images/cook.webp" alt="Quentin L. Cook">
+            <img class="leader" src="images/anderson.webp" alt="Neil L. Andersen">
+
+            <!-- Row 2 -->
+            <img class="leader" src="images/rasband.webp" alt="Ronald A. Rasband">
+            <img class="leader" src="images/stevenson.webp" alt="Gary E. Stevenson">
+            <img class="leader" src="images/renlund.webp" alt="Dale G. Renlund">
+            <img class="leader" src="images/gong.webp" alt="Gerrit W. Gong">
+
+            <!-- Row 3 -->
+            <img class="leader" src="images/soares.webp" alt="Ulisses Soares">
+            <img class="leader" src="images/kearon.webp" alt="Patrick Kearon">
+            <img class="leader" src="images/causse.webp" alt="Gérald Caussé">
+            <img class="leader" src="images/gilbert.webp" alt="Clark G. Gilbert">
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Main Page */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+/* Content Box */
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+  box-sizing: border-box;
+}
+
+.content-box h2 {
+  color: #001f3f;
+  margin-bottom: 20px;
+}
+
+/* Devotional Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+th, td {
+  border: 1px solid #b0b8c0;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #001f3f;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #e8eef4;
+}
+
+tr:hover td {
+  background-color: #d5e5f2;
+}
+
+/* Devotional Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  background-color: #e8eef4;
+  border: 2px solid #001f3f;
+  border-radius: 8px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #001f3f;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #a0aab5;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #447da8;
+  border-color: #447da8;
+}
+
+/* Devotional Button */
+
+button {
+  background-color: #001f3f;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #285780;
+}
